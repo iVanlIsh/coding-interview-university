@@ -1,18 +1,22 @@
 # Coding Interview University
 
+> This project is forked from @jawasham\'s oriingal coding-interview-university project, which is licensed under [CC-BY-SA-4.0](https://github.com/jwasham/coding-interview-university/blob/master/LICENSE.txt).
+> 
+> It's a good guideline, but when I actually go into it, I few it's a little too easy. However, I'm not very familiar with some standard library of the languages I used or using, so I will focus more on the implementation part, go deep to the related libraries and try to do some reproduction.
+
 [Original Introduction](Introduction.md)
 
 ---
 
 ## Table of Contents
 
-- [x] [~~Algorithmic complexity / Big-O / Asymptotic analysis~~](#algorithmic-complexity--big-o--asymptotic-analysis)
+- [x] [Algorithmic complexity / Big-O / Asymptotic analysis](#algorithmic-complexity--big-o--asymptotic-analysis)
 - [ ] [Data Structures](#data-structures)
-    - [Arrays](#arrays)
-    - [Linked Lists](#linked-lists)
-    - [Stack](#stack)
-    - [Queue](#queue)
-    - [Hash table](#hash-table)
+    - [x] [Arrays](#arrays)
+    - [ ] [Linked Lists](#linked-lists)
+    - [ ] [Stack](#stack)
+    - [ ] [Queue](#queue)
+    - [ ] [Hash table](#hash-table)
     - [ ] [Binary search](#binary-search)
     - [ ] [Bitwise operations](#bitwise-operations)
 - [ ] [Trees](#trees)
@@ -109,14 +113,9 @@
 ## Data Structures
 
 - ### Arrays
-    - Description:
-        - [Basic Arrays (video)](https://www.lynda.com/Developer-Programming-Foundations-tutorials/Basic-arrays/149042/177104-4.html)
-        - [Multi-dim (video)](https://www.lynda.com/Developer-Programming-Foundations-tutorials/Multidimensional-arrays/149042/177105-4.html)
-        - [Dynamic Arrays (video)](https://www.coursera.org/learn/data-structures/lecture/EwbnV/dynamic-arrays)
-        - [Jagged Arrays (video)](https://www.youtube.com/watch?v=1jtrQqYpt7g)
-        - [Resizing arrays (video)](https://www.lynda.com/Developer-Programming-Foundations-tutorials/Resizable-arrays/149042/177108-4.html)
+    - Description: [Dynamic Arrays (video)](https://www.coursera.org/learn/data-structures/lecture/EwbnV/dynamic-arrays), [Jagged Arrays (video)](https://www.youtube.com/watch?v=1jtrQqYpt7g), [Resizing arrays (video)](https://www.lynda.com/Developer-Programming-Foundations-tutorials/Resizable-arrays/149042/177108-4.html)
     - [x] Implement a vector (mutable array with automatic resizing):
-        - [ ] Practice coding using arrays and pointers, and pointer math to jump to an index instead of using indexing.
+			> cpp [vector](http://en.cppreference.com/w/cpp/container/vector): [my implement](/implement/array.cpp)
         - [ ] new raw data array with allocated memory
             - can allocate int array under the hood, just not use its features
             - start with 16, or if starting number is greater, use power of 2 - 16, 32, 64, 128

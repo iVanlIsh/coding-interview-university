@@ -32,6 +32,8 @@ public:
     //TODO
     //void* operator new(size_t size) {}
     //void operator delete(void* d) {}
+    //void swap(Vector<T> &v) {}
+		//void shrink_to_fit() {}
 
     ~Vector() {
         a1.destroy(a);
@@ -107,9 +109,6 @@ public:
         }
         size--;
     }
-
-    //TODO
-    void swap(Vector<T> &v) {}
 
     T operator[] (const int index) {
         if(index < 0 || index >= size) throw invalid_argument("Invalid index.");
