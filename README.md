@@ -115,7 +115,7 @@
 - ### Arrays
     - Description: [Dynamic Arrays (video)](https://www.coursera.org/learn/data-structures/lecture/EwbnV/dynamic-arrays), [Jagged Arrays (video)](https://www.youtube.com/watch?v=1jtrQqYpt7g), [Resizing arrays (video)](https://www.lynda.com/Developer-Programming-Foundations-tutorials/Resizable-arrays/149042/177108-4.html)
     - [x] Implement a vector (mutable array with automatic resizing):
-			> cpp [vector](http://en.cppreference.com/w/cpp/container/vector): [array.cpp](/implement/array.cpp)
+			  - cpp [vector](http://en.cppreference.com/w/cpp/container/vector): [array.cpp](/implement/array.cpp)
         - [ ] new raw data array with allocated memory
             - can allocate int array under the hood, just not use its features
             - start with 16, or if starting number is greater, use power of 2 - 16, 32, 64, 128
