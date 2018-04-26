@@ -13,7 +13,7 @@
 - [x] [Algorithmic complexity / Big-O / Asymptotic analysis](#algorithmic-complexity--big-o--asymptotic-analysis)
 - [ ] [Data Structures](#data-structures)
     - [x] [Arrays](#arrays)
-    - [ ] [Linked Lists](#linked-lists)
+    - [x] [Linked Lists](#linked-lists)
     - [ ] [Stack](#stack)
     - [ ] [Queue](#queue)
     - [ ] [Hash table](#hash-table)
