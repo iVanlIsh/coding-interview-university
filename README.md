@@ -17,7 +17,7 @@
     - [~Stack~](#stack)
     - [~Queue~](#queue)
     - [x] [Hash table](#hash-table)
-    - [ ] [Binary search](#binary-search)
+    - [x] [Binary search](#binary-search)
     - [ ] [Bitwise operations](#bitwise-operations)
 - [ ] [Trees](#trees)
     - [ ] [Trees - Notes & Background](#trees---notes--background)
@@ -174,7 +174,7 @@
     - [ ] [Binary Search (video)](https://www.youtube.com/watch?v=D5SrAga1pno)
     - [ ] [Binary Search (video)](https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search)
     - [ ] [detail](https://www.topcoder.com/community/data-science/data-science-tutorials/binary-search/)
-    - [ ] Implement:
+    - [x] Implement:
         - binary search (on sorted array of integers)
         - binary search using recursion
 
