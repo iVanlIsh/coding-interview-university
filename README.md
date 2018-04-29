@@ -16,7 +16,7 @@
     - [x] [Linked Lists](#linked-lists)
     - [~Stack~](#stack)
     - [~Queue~](#queue)
-    - [ ] [Hash table](#hash-table)
+    - [x] [Hash table](#hash-table)
     - [ ] [Binary search](#binary-search)
     - [ ] [Bitwise operations](#bitwise-operations)
 - [ ] [Trees](#trees)
@@ -162,7 +162,7 @@
         - [ ] [(Advanced) Perfect hashing (video)](https://www.youtube.com/watch?v=N0COwN14gt0&list=PL2B4EEwhKD-NbwZ4ezj7gyc_3yNrojKM9&index=4)
         - [ ] [distributed hash tables](https://en.wikipedia.org/wiki/Distributed_hash_table)
 
-    - [ ] implement with array using linear probing
+    - [x] implement with array using linear probing
         - hash(k, m) - m is size of hash table
         - add(key, value) - if key already exists, update value
         - exists(key)
