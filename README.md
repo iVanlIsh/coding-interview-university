@@ -10,17 +10,17 @@
 
 ## Table of Contents
 
-- [~Algorithmic complexity / Big-O / Asymptotic analysis~](#algorithmic-complexity--big-o--asymptotic-analysis)
+- [Algorithmic complexity / Big-O / Asymptotic analysis](#algorithmic-complexity--big-o--asymptotic-analysis)
 - [x] [Data Structures](#data-structures)
     - [x] [Arrays](#arrays)
     - [x] [Linked Lists](#linked-lists)
-    - [~Stack~](#stack)
-    - [~Queue~](#queue)
+    - [Stack](#stack)
+    - [Queue](#queue)
     - [x] [Hash table](#hash-table)
     - [x] [Binary search](#binary-search)
     - [ ] [Bitwise operations](#bitwise-operations)
 - [ ] [Trees](#trees)
-    - [ ] [Trees - Notes & Background](#trees---notes--background)
+    - [Trees - Notes & Background](#trees---notes--background)
     - [ ] [Binary search trees: BSTs](#binary-search-trees-bsts)
     - [ ] [Heap / Priority Queue / Binary Heap](#heap--priority-queue--binary-heap)
     - [ ] balanced search trees (general concept, not details)
@@ -104,8 +104,10 @@
 - [Video Series](#video-series)
 - [Computer Science Courses](#computer-science-courses)
 
+--------
+
 ## Algorithmic complexity / Big-O / Asymptotic analysis
-- [ ] TopCoder (includes recurrence relations and master theorem):
+- TopCoder (includes recurrence relations and master theorem):
     - [Computational Complexity: Section 1](https://www.topcoder.com/community/data-science/data-science-tutorials/computational-complexity-section-1/)
     - [Computational Complexity: Section 2](https://www.topcoder.com/community/data-science/data-science-tutorials/computational-complexity-section-2/)
 - [ ] [Cheat sheet](http://bigocheatsheet.com/)
@@ -116,36 +118,36 @@
     - Description: [Dynamic Arrays (video)](https://www.coursera.org/learn/data-structures/lecture/EwbnV/dynamic-arrays), [Jagged Arrays (video)](https://www.youtube.com/watch?v=1jtrQqYpt7g), [Resizing arrays (video)](https://www.lynda.com/Developer-Programming-Foundations-tutorials/Resizable-arrays/149042/177108-4.html)
     - [x] Implement a vector (mutable array with automatic resizing):
 			  - cpp [vector](http://en.cppreference.com/w/cpp/container/vector): [array.cpp](/implement/array.cpp)
-    - [ ] Time
+    - Time
         - O(1) to add/remove at end (amortized for allocations for more space), index, or update
         - O(n) to insert/remove elsewhere
-    - [ ] Space
+    - Space
         - contiguous in memory, so proximity helps performance
         - space needed = (array capacity, which is >= n) * size of item, but even if 2n, still O(n)
 
 - ### Linked Lists
-    - [ ] Description:
-        - [ ] [CS 61B - Linked Lists 1 (video)](https://archive.org/details/ucberkeley_webcast_htzJdKoEmO0)
-        - [ ] [CS 61B - Linked Lists 2 (video)](https://archive.org/details/ucberkeley_webcast_-c4I3gFYe3w)
-				- [ ] [Doubly-linked List (video)](https://www.coursera.org/learn/data-structures/lecture/jpGKD/doubly-linked-lists)
-    - [ ] [C Code (video)](https://www.youtube.com/watch?v=QN6FPiD0Gzo)
+    - Description:
+        - [CS 61B - Linked Lists 1 (video)](https://archive.org/details/ucberkeley_webcast_htzJdKoEmO0)
+        - [CS 61B - Linked Lists 2 (video)](https://archive.org/details/ucberkeley_webcast_-c4I3gFYe3w)
+				- [Doubly-linked List (video)](https://www.coursera.org/learn/data-structures/lecture/jpGKD/doubly-linked-lists)
+    - [C Code (video)](https://www.youtube.com/watch?v=QN6FPiD0Gzo)
             - not the whole video, just portions about Node struct and memory allocation.
-    - [ ] Linked List vs Arrays:
+    - Linked List vs Arrays:
         - [Core Linked Lists Vs Arrays (video)](https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/rjBs9/core-linked-lists-vs-arrays)
         - [In The Real World Linked Lists Vs Arrays (video)](https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/QUaUd/in-the-real-world-lists-vs-arrays)
-    - [ ] [why you should avoid linked lists (video)](https://www.youtube.com/watch?v=YQs6IC-vgmo)
-    - [ ] Gotcha: you need pointer to pointer knowledge:
+    - [why you should avoid linked lists (video)](https://www.youtube.com/watch?v=YQs6IC-vgmo)
+    - Gotcha: you need pointer to pointer knowledge:
         (for when you pass a pointer to a function that may change the address where that pointer points)
         This page is just to get a grasp on ptr to ptr. I don't recommend this list traversal style. Readability and maintainability suffer due to cleverness.
         - [Pointers to Pointers](https://www.eskimo.com/~scs/cclass/int/sx8.html)
     - [x] implement:
-        -  cpp [list](http://en.cppreference.com/w/cpp/container/list): [list.cpp](implement/lsit.cpp)
+        -  cpp [list](http://en.cppreference.com/w/cpp/container/list): [list.cpp](implement/list.cpp)
 
 - ### Stack
     - C++11 emplace(not only exist in stack library) => do not create temporary variables.  
 - ### Queue
-    - [ ] [Circular buffer/FIFO](https://en.wikipedia.org/wiki/Circular_buffer)
-    - [ ] Cost:
+    - [Circular buffer/FIFO](https://en.wikipedia.org/wiki/Circular_buffer)
+    - Cost:
         - a bad implementation using linked list where you enqueue at head and dequeue at tail would be O(n)
             because you'd need the next to last element, causing a full traversal each dequeue
         - enqueue: O(1) (amortized, linked list and array [probing])
@@ -153,16 +155,16 @@
         - empty: O(1) (linked list and array)
 
 - ### Hash table
-    - [ ] Videos:
-        - [ ] [Hashing with Chaining (video)](https://www.youtube.com/watch?v=0M_kIqhwbFo&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=8)
-        - [ ] [Table Doubling, Karp-Rabin (video)](https://www.youtube.com/watch?v=BRO7mVIFt08&index=9&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
-        - [ ] [Open Addressing, Cryptographic Hashing (video)](https://www.youtube.com/watch?v=rvdJDijO2Ro&index=10&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
-        - [ ] [PyCon 2010: The Mighty Dictionary (video)](https://www.youtube.com/watch?v=C4Kc8xzcA68)
-        - [ ] [(Advanced) Randomization: Universal & Perfect Hashing (video)](https://www.youtube.com/watch?v=z0lJ2k0sl1g&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&index=11)
-        - [ ] [(Advanced) Perfect hashing (video)](https://www.youtube.com/watch?v=N0COwN14gt0&list=PL2B4EEwhKD-NbwZ4ezj7gyc_3yNrojKM9&index=4)
-        - [ ] [distributed hash tables](https://en.wikipedia.org/wiki/Distributed_hash_table)
-
+    - Videos:
+        - [Hashing with Chaining (video)](https://www.youtube.com/watch?v=0M_kIqhwbFo&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=8)
+        - [Table Doubling, Karp-Rabin (video)](https://www.youtube.com/watch?v=BRO7mVIFt08&index=9&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
+        - [Open Addressing, Cryptographic Hashing (video)](https://www.youtube.com/watch?v=rvdJDijO2Ro&index=10&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
+        - [PyCon 2010: The Mighty Dictionary (video)](https://www.youtube.com/watch?v=C4Kc8xzcA68)
+        - [(Advanced) Randomization: Universal & Perfect Hashing (video)](https://www.youtube.com/watch?v=z0lJ2k0sl1g&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&index=11)
+        - [(Advanced) Perfect hashing (video)](https://www.youtube.com/watch?v=N0COwN14gt0&list=PL2B4EEwhKD-NbwZ4ezj7gyc_3yNrojKM9&index=4)
+        - [distributed hash tables](https://en.wikipedia.org/wiki/Distributed_hash_table)
     - [x] implement with array using linear probing
+        -  cpp hash table: [hash.cpp](implement/hash.cpp)
         - hash(k, m) - m is size of hash table
         - add(key, value) - if key already exists, update value
         - exists(key)
@@ -171,43 +173,42 @@
 
 
 - ### Binary search
-    - [ ] [detail](https://www.topcoder.com/community/data-science/data-science-tutorials/binary-search/)
+    - [detail](https://www.topcoder.com/community/data-science/data-science-tutorials/binary-search/)
     - [x] Implement:
-        - binary search (on sorted array of integers)
-        - binary search using recursion
+        -  cpp binary search: [binarySearch.cpp](implement/binarySearch.cpp)
 
 - ### Bitwise operations
     - [ ] [Bits cheat sheet](https://github.com/jwasham/coding-interview-university/blob/master/extras/cheat%20sheets/bits-cheat-cheet.pdf) - you should know many of the powers of 2 from (2^1 to 2^16 and 2^32)
-    - [ ] Get a really good understanding of manipulating bits with: &, |, ^, ~, >>, <<
-        - [ ] [words](https://en.wikipedia.org/wiki/Word_(computer_architecture))
-        - [ ] [Bit Manipulation](https://en.wikipedia.org/wiki/Bit_manipulation)
-        - [ ] [Bitwise Operation](https://en.wikipedia.org/wiki/Bitwise_operation)
-        - [ ] [__Bithacks__](https://graphics.stanford.edu/~seander/bithacks.html)
-        - [ ] [__The Bit Twiddler__](http://bits.stephan-brumme.com/)
-        - [ ] [__The Bit Twiddler Interactive__](http://bits.stephan-brumme.com/interactive.html)
-    - [ ] 2s and 1s complement
+    - Get a really good understanding of manipulating bits with: &, |, ^, ~, >>, <<
+        - [words](https://en.wikipedia.org/wiki/Word_(computer_architecture))
+        - [Bit Manipulation](https://en.wikipedia.org/wiki/Bit_manipulation)
+        - [Bitwise Operation](https://en.wikipedia.org/wiki/Bitwise_operation)
+        - [ ] [Bithacks](https://graphics.stanford.edu/~seander/bithacks.html)
+        - [ ] [The Bit Twiddler](http://bits.stephan-brumme.com/)
+        - [ ] [The Bit Twiddler Interactive](http://bits.stephan-brumme.com/interactive.html)
+    - 2s and 1s complement
         - [1s Complement](https://en.wikipedia.org/wiki/Ones%27_complement)
         - [2s Complement](https://en.wikipedia.org/wiki/Two%27s_complement)
-    - [ ] count set bits
+    - count set bits
         - [4 ways to count bits in a byte (video)](https://youtu.be/Hzuzo9NJrlc)
         - [Count Bits](https://graphics.stanford.edu/~seander/bithacks.html#CountBitsSetKernighan)
         - [How To Count The Number Of Set Bits In a 32 Bit Integer](http://stackoverflow.com/questions/109023/how-to-count-the-number-of-set-bits-in-a-32-bit-integer)
-				- [__Hamming_weight__](https://en.wikipedia.org/wiki/Hamming_weight)
+				- [ ] [Hamming_weight](https://en.wikipedia.org/wiki/Hamming_weight)
 				- Hamming weight equals to the Hamming distance with 0
 				- Time Complexity: log(n)
-    - [ ] __round to next power of 2__:
+    - [ ] round to next power of 2:
         - [Round Up To Next Power Of Two](http://bits.stephan-brumme.com/roundUpToNextPowerOfTwo.html)
 				- minus 1, than make every bits into 1, then add 1.
-    - [ ] swap values:
+    - swap values:
         - [Swap](http://bits.stephan-brumme.com/swap.html)
     - [ ] absolute value:
-        - [__Absolute Integer__](http://bits.stephan-brumme.com/absInteger.html)
+        - [Absolute Integer](http://bits.stephan-brumme.com/absInteger.html)
 
 ## Trees
 
 - ### Trees - Notes & Background
-    - [ ] [Series: Core Trees (video)](https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/ovovP/core-trees)
-    - [ ] [Series: Trees (video)](https://www.coursera.org/learn/data-structures/lecture/95qda/trees)
+    - [Series: Core Trees (video)](https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/ovovP/core-trees)
+    - [Series: Trees (video)](https://www.coursera.org/learn/data-structures/lecture/95qda/trees)
     - basic tree construction
     - traversal
     - manipulation algorithms
@@ -229,10 +230,6 @@
 
 - ### Binary search trees: BSTs
     - [ ] [Binary Search Tree Review (video)](https://www.youtube.com/watch?v=x6At0nzX92o&index=1&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6)
-    - [ ] [Series (video)](https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/p82sw/core-introduction-to-binary-search-trees)
-        - starts with symbol table and goes through BST applications
-    - [ ] [Introduction (video)](https://www.coursera.org/learn/data-structures/lecture/E7cXP/introduction)
-    - [ ] [MIT (video)](https://www.youtube.com/watch?v=9Jry5-82I68)
     - C/C++:
         - [ ] [Binary search tree - Implementation in C/C++ (video)](https://www.youtube.com/watch?v=COZK7NATh4k&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=28)
         - [ ] [BST implementation - memory allocation in stack and heap (video)](https://www.youtube.com/watch?v=hWokyBoo0aI&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=29)
@@ -244,7 +241,8 @@
         - [ ] [Check if a binary tree is binary search tree or not (video)](https://www.youtube.com/watch?v=yEwSGhSsT0U&index=35&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P)
         - [ ] [Delete a node from Binary Search Tree (video)](https://www.youtube.com/watch?v=gcULXE7ViZw&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=36)
         - [ ] [Inorder Successor in a binary search tree (video)](https://www.youtube.com/watch?v=5cPbNCrdotA&index=37&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P)
-    - [ ] Implement:
+    - [x] Implement:
+        - cpp: [bst.cpp](implement/bst.cpp)
         - [ ] insert    // insert value into tree
         - [ ] get_node_count // get count of values stored
         - [ ] print_values // prints the values in the tree, from min to max
