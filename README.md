@@ -173,7 +173,6 @@
         - get(key)
         - remove(key)
 
-
 - ### Binary search
     - [detail](https://www.topcoder.com/community/data-science/data-science-tutorials/binary-search/)
     - [x] Implement:
@@ -278,13 +277,14 @@
 ## Sorting
 
 - [ ] Notes:
+    - [http://www.eternallyconfuzzled.com/tuts/algorithms/jsw_tut_sorting.aspx](http://www.eternallyconfuzzled.com/tuts/algorithms/jsw_tut_sorting.aspx)
     - Implement sorts & know best case/worst case, average complexity of each:
         - no bubble sort - it's terrible - O(n^2), except when n <= 16
-    - [ ] stability in sorting algorithms ("Is Quicksort stable?")
+    - [ ] stability in sorting algorithms
+        - Stable: insertion sort, merge sort, bubble sort, tim sort, radix sort
+        - Unstable: heap sort, quick sort, shell sort, selection sort
         - [Sorting Algorithm Stability](https://en.wikipedia.org/wiki/Sorting_algorithm#Stability)
         - [Stability In Sorting Algorithms](http://stackoverflow.com/questions/1517793/stability-in-sorting-algorithms)
-        - [Stability In Sorting Algorithms](http://www.geeksforgeeks.org/stability-in-sorting-algorithms/)
-        - [Sorting Algorithms - Stability](http://homepages.math.uic.edu/~leon/cs-mcs401-s08/handouts/stability.pdf)
     - [ ] Which algorithms can be used on linked lists? Which on arrays? Which on both?
         - I wouldn't recommend sorting a linked list, but merge sort is doable.
         - [Merge Sort For Linked List](http://www.geeksforgeeks.org/merge-sort-for-linked-list/)
