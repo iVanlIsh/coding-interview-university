@@ -278,6 +278,7 @@
 
 - [ ] Notes:
     - [http://www.eternallyconfuzzled.com/tuts/algorithms/jsw_tut_sorting.aspx](http://www.eternallyconfuzzled.com/tuts/algorithms/jsw_tut_sorting.aspx)
+    - [smoothsort](http://www.keithschwarz.com/smoothsort/)
     - Implement sorts & know best case/worst case, average complexity of each:
         - no bubble sort - it's terrible - O(n^2), except when n <= 16
     - [ ] stability in sorting algorithms
