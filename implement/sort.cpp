@@ -133,11 +133,15 @@ vector<int> shell_sort(vector<int> v) {
 	return v;
 }
 
+vector<int> radix_sort(vector<int> v) {
+	return v;
+}
+
 int main() {
 	int a = 1;
 	vector<int> v(1000);
 	for(int i=0; i<1000; i++)
-		v[i] = rand();
+		v[i] = rand()%10000;
 	// print(v);
 	clock_t start;
 	start = clock();
@@ -155,6 +159,9 @@ int main() {
 	// start = clock();
 	// print(merge_sort(v));
 	// cout<< "Merge sort: " << difftime(clock(), start) << "ms" << endl;
+	// start = clock();
+	// radix_sort(v);
+	// cout<< "Radix sort: " << difftime(clock(), start) << "ms" << endl;
 	start = clock();
 	selection_sort(v);
 	cout<< "Selection sort: " << difftime(clock(), start) << "ms" << endl;
