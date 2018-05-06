@@ -112,7 +112,8 @@
 - TopCoder (includes recurrence relations and master theorem):
     - [Computational Complexity: Section 1](https://www.topcoder.com/community/data-science/data-science-tutorials/computational-complexity-section-1/)
     - [Computational Complexity: Section 2](https://www.topcoder.com/community/data-science/data-science-tutorials/computational-complexity-section-2/)
-- [ ] [Cheat sheet](http://bigocheatsheet.com/)
+- [ ] [~Cheat sheet~](http://bigocheatsheet.com/)
+- [ ] [Complexities](https://blog.csdn.net/songzitea/article/details/52154174)
 
 ## Data Structures
 
@@ -274,11 +275,27 @@
         - heap_sort() - take an unsorted array and turn it into a sorted array in-place using a max heap
             - note: using a min heap instead would save operations, but double the space needed (cannot do in-place).
 
-- ### Tries
-  - [Using Tries](https://www.topcoder.com/community/data-science/data-science-tutorials/using-tries/)
-  - [ ] [从Trie树（字典树）谈到后缀树](https://blog.csdn.net/v_july_v/article/details/6897097)
+- ### Further More
+  - [ ] Tries
+    - [Using Tries](https://www.topcoder.com/community/data-science/data-science-tutorials/using-tries/)
+    - [ ] [从Trie树（字典树）谈到后缀树](https://blog.csdn.net/v_july_v/article/details/6897097)
 
-- ### [Balanced Search Trees](#balanced-search-trees)
+  - [ ] [Balanced Search Trees](#balanced-search-trees)
+    - [ ] B-tree
+    - [ ] AVL
+    - [ ] Treap
+    - [ ] Cartesian tree
+    - [ ] Splay tree
+    - [ ] Red-Black tree (LLRB)
+    - [ ] B+-tree
+    - [ ] B*-tree
+    - [ ] 2-3 tree
+    - [ ] 2-3-4 tree
+    - [ ] KD tree
+  - [ ] Segment tree
+  - [ ] Leftiest tree (skew heap)
+
+---
 
 ## Sorting
 
@@ -286,7 +303,8 @@
     - [http://www.eternallyconfuzzled.com/tuts/algorithms/jsw_tut_sorting.aspx](http://www.eternallyconfuzzled.com/tuts/algorithms/jsw_tut_sorting.aspx)
     - [smoothsort](http://www.keithschwarz.com/smoothsort/)
     - Implement sorts & know best case/worst case, average complexity of each:
-        - no bubble sort - it's terrible - O(n^2), except when n <= 16
+        - [x] cpp: [sort.cpp](implement/sort.cpp)
+        - [x] [my notes of sorting](https://ivanlish.github.io/tech/2018/05/04/sorting/)
     - [ ] stability in sorting algorithms
         - Stable: insertion sort, merge sort, bubble sort, tim sort, radix sort
         - Unstable: heap sort, quick sort, shell sort, selection sort
@@ -328,9 +346,6 @@
     - [Implementation (C)](https://github.com/jwasham/practice-c/blob/master/quick_sort/quick_sort.c)
     - [Implementation (Python)](https://github.com/jwasham/practice-python/blob/master/quick_sort/quick_sort.py)
 
-- [x] Implement:
-    - cpp: [sort.cpp](implement/sort.cpp)
-
 - [ ] Not required, but I recommended them:
     - [ ] [Sedgewick - Radix Sorts (6 videos)](https://www.youtube.com/playlist?list=PLe-ggMe31CTcNvUX9E3tQeM6ntrdR8e53)
         - [ ] [1. Strings in Java](https://www.youtube.com/watch?v=zRzU-FWsjNU&list=PLe-ggMe31CTcNvUX9E3tQeM6ntrdR8e53&index=6)
@@ -350,17 +365,16 @@ If you need more detail on this subject, see "Sorting" section in [Additional De
 
 ## Graphs
 
-Graphs can be used to represent many problems in computer science, so this section is long, like trees and sorting were.
-
 - Notes:
-    - There are 4 basic ways to represent a graph in memory:
+    - 4 basic ways to represent a graph in memory:
         - objects and pointers
         - adjacency matrix
         - adjacency list
         - adjacency map
-    - Familiarize yourself with each representation and its pros & cons
+    - each representation and its pros & cons
     - BFS and DFS - know their computational complexity, their tradeoffs, and how to implement them in real code
-    - When asked a question, look for a graph-based solution first, then move on if none.
+    - Shortest path (Dijkstra)
+    - Minimum spanningtre (3 methods)
 
 - [ ] Skiena Lectures - great intro:
     - [ ] [CSE373 2012 - Lecture 11 - Graph Data Structures (video)](https://www.youtube.com/watch?v=OiXxhDrFruw&list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&index=11)
@@ -385,10 +399,7 @@ Graphs can be used to represent many problems in computer science, so this secti
     - [ ] [Greedy Algorithms: Minimum Spanning Tree (video)](https://www.youtube.com/watch?v=tKwnms5iRBU&index=16&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp)
     - [ ] [Strongly Connected Components Kosaraju's Algorithm Graph Algorithm (video)](https://www.youtube.com/watch?v=RpgcYiky7uw)
 
-- Full Coursera Course:
-    - [ ] [Algorithms on Graphs (video)](https://www.coursera.org/learn/algorithms-on-graphs/home/welcome)
-
-- I'll implement:
+- [ ] Implement:
     - [ ] DFS with adjacency list (recursive)
     - [ ] DFS with adjacency list (iterative with stack)
     - [ ] DFS with adjacency matrix (recursive)
@@ -396,7 +407,7 @@ Graphs can be used to represent many problems in computer science, so this secti
     - [ ] BFS with adjacency list
     - [ ] BFS with adjacency matrix
     - [ ] single-source shortest path (Dijkstra)
-    - [ ] minimum spanning tree
+    - [ ] minimum spanning treei(3 methods)
     - DFS-based algorithms (see Aduni videos above):
         - [ ] check for cycle (needed for topological sort, since we'll check for cycle before starting)
         - [ ] topological sort
@@ -405,7 +416,6 @@ Graphs can be used to represent many problems in computer science, so this secti
         - [ ] check for bipartite graph
 
 You'll get more graph practice in Skiena's book (see Books section below) and the interview books
-
 
 - ### Recursion
     - [ ] Stanford lectures on recursion & backtracking:
