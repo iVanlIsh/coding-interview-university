@@ -293,11 +293,13 @@
     - [ ] 2-3-4 tree
     - [ ] KD tree
 		- [ ] R-tree
+		- [ ] Scapegoat tree
   - [ ] Segment tree
 		- [ ] Interval tree
-		- [ ] Persistent Segment Tree
+		- [ ] Persistent Segment Tree: [chairman-tree](https://blog.masterliu.net/chairman-tree/)
+		- [ ] [Range Tree](https://www.topcoder.com/community/data-science/data-science-tutorials/range-minimum-query-and-lowest-common-ancestor/)
+		- [ ] Binary indexed tree
   - [ ] Leftiest tree (skew heap)
-	- [ ] Scapegoat tree
 	- [ ] Game tree
 		- [ ] Complete game tree
 		- [ ] Partial game tree
