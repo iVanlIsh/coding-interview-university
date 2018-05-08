@@ -292,8 +292,16 @@
     - [ ] 2-3 tree
     - [ ] 2-3-4 tree
     - [ ] KD tree
+		- [ ] R-tree
   - [ ] Segment tree
+		- [ ] Interval tree
+		- [ ] Persistent Segment Tree
   - [ ] Leftiest tree (skew heap)
+	- [ ] Scapegoat tree
+	- [ ] Game tree
+		- [ ] Complete game tree
+		- [ ] Partial game tree
+		- [ ] Winner / Loser tree
 
 ---
 
@@ -313,6 +321,21 @@
     - [ ] Which algorithms can be used on linked lists? Which on arrays? Which on both?
         - I wouldn't recommend sorting a linked list, but merge sort is doable.
         - [Merge Sort For Linked List](http://www.geeksforgeeks.org/merge-sort-for-linked-list/)
+		- [ ] Sorting methods
+			- [x] Insertion sort
+			- [x] Selection sort
+			- [x] Merge sort
+			- [x] Bubble sort
+			- [x] Quick sort
+			- [x] Counting sort
+			- [x] Bucket sort
+			- [x] Shell sort
+			- [x] Tim sort
+			- [x] Heap sort
+			- [ ] Smooth sort
+			- [ ] Cube sort
+			- [x] Radix sort
+			- [x] Tree sort
 
 - [ ] [Sedgewick - Mergesort (5 videos)](https://www.youtube.com/watch?v=4nKwesx_c8E&list=PLe-ggMe31CTeunC6GZHFBmQx7EKtjbGf9)
     - [ ] [1. Mergesort](https://www.youtube.com/watch?v=4nKwesx_c8E&list=PLe-ggMe31CTeunC6GZHFBmQx7EKtjbGf9&index=1)
@@ -374,7 +397,8 @@ If you need more detail on this subject, see "Sorting" section in [Additional De
     - each representation and its pros & cons
     - BFS and DFS - know their computational complexity, their tradeoffs, and how to implement them in real code
     - Shortest path (Dijkstra)
-    - Minimum spanningtre (3 methods)
+    - Minimum spoanningtre (3 methods)
+	  - Topologic sort 
 
 - [ ] Skiena Lectures - great intro:
     - [ ] [CSE373 2012 - Lecture 11 - Graph Data Structures (video)](https://www.youtube.com/watch?v=OiXxhDrFruw&list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&index=11)
