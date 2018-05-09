@@ -299,6 +299,8 @@
 		- [ ] Persistent Segment Tree: [chairman-tree](https://blog.masterliu.net/chairman-tree/)
 		- [ ] [Range Tree](https://www.topcoder.com/community/data-science/data-science-tutorials/range-minimum-query-and-lowest-common-ancestor/)
 		- [ ] Binary indexed tree
+	- [ ] heap
+		- [ ] Fibonacci heap
   - [ ] Leftiest tree (skew heap)
 	- [ ] Game tree
 		- [ ] Complete game tree
@@ -397,10 +399,12 @@ If you need more detail on this subject, see "Sorting" section in [Additional De
         - adjacency list
         - adjacency map
     - each representation and its pros & cons
-    - BFS and DFS - know their computational complexity, their tradeoffs, and how to implement them in real code
-    - Shortest path (Dijkstra)
-    - Minimum spoanningtre (3 methods)
-	  - Topologic sort 
+    - [x] BFS and DFS - know their computational complexity, their tradeoffs, and how to implement them in real code
+    - [x] Shortest path (Dijkstra)
+    - Minimum spoanningtre
+				- [ ] Prim
+				- [ ] Kruskal
+	  - [ ] Topologic sort 
 
 - [ ] Skiena Lectures - great intro:
     - [ ] [CSE373 2012 - Lecture 11 - Graph Data Structures (video)](https://www.youtube.com/watch?v=OiXxhDrFruw&list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&index=11)
